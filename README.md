@@ -1,73 +1,39 @@
-# React + TypeScript + Vite
+# Vitalis - Medical & Pharmacy Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Plantilla Premium para el sector salud diseñada para generar confianza y ventas.
+> Desarrollada con las tecnologías más modernas del ecosistema React.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?logo=tailwind-css)
+![Framer Motion](https://img.shields.io/badge/Animation-Framer_Motion-black)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descripción del Proyecto
 
-## React Compiler
+Este proyecto es una Landing Page de alto rendimiento diseñada específicamente para farmacias, clínicas y startups médicas. A diferencia de las plantillas genéricas, esta interfaz se centra en la experiencia de usuario (UX), la accesibilidad y la velocidad de carga.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El diseño combina una estética "Corporativa Limpia" con toques modernos (Glassmorphism, tipografía técnica) para transmitir profesionalismo y confianza médica.
 
-## Expanding the ESLint configuration
+## Características Principales
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Diseño UI/UX Premium: Estética limpia con paleta de colores azules corporativos y efectos de desenfoque (backdrop-blur).
+* 100% Responsivo: Se adapta perfectamente a móviles, tablets y escritorio. Menú de navegación optimizado para táctil.
+* Animaciones Suaves: Integración de Framer Motion para entradas elegantes de elementos y micro-interacciones al pasar el mouse.
+* Arquitectura Sólida: Construido con TypeScript para garantizar un código libre de errores y fácil de mantener.
+* Iconografía Moderna: Uso de Lucide React para iconos vectoriales nítidos y ligeros.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tecnologías Utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* Core: React + Vite
+* Lenguaje: TypeScript
+* Estilos: Tailwind CSS
+* Animaciones: Framer Motion
+* Iconos: Lucide React
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Instalación y Uso Local
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Si eres desarrollador y quieres probar este proyecto en tu máquina:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clonar el repositorio:
+   ```bash
+   git clone [TU_LINK_DEL_REPO_AQUI]
